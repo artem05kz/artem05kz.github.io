@@ -1,0 +1,439 @@
+html {
+  scroll-behavior: smooth;
+
+}
+body
+{
+  background: #fff0e1;;
+  margin: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+
+}
+main
+{
+  margin: 0px 10px 0px 15%;
+  width: 70%;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: large;
+  
+}
+.term
+{
+  margin-top: 5%;
+}
+.topic1
+{
+  
+}
+.text-justify { 
+  text-align: justify; /* Выравнивание по ширине */
+ }
+.topic2
+{
+  margin-top: 10px;
+}
+.topic3
+{
+  margin-bottom: 10px;
+}
+.topic3 p
+{
+  text-transform: uppercase;
+
+}
+.topic4 p
+{
+  text-transform: uppercase;
+
+}
+
+/* Контейнер для видео и подписи */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Уменьшили внутренние отступы */
+  background-color: #fae2ca;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  max-width: 640px; /* Ширина контейнера ограничена шириной видео */
+  width: 100%; /* Контейнер адаптивен и не превышает 100% ширины экрана */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Псевдоэлемент ::before для декоративного эффекта */
+.video-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 99, 71, 0.2);
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Соотношение сторон 16:9 для видео */
+  position: relative;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Подпись */
+.video-container p {
+  font-size: 14px; 
+  margin-top: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Эффект при наведении на контейнер */
+.video-container:hover {
+  transform: scale(1.05);
+}
+
+.video-container:hover::before {
+  opacity: 1;
+}
+.list-creator {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.list-creator button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list-creator button:hover {
+  background-color: #0056b3;
+}
+
+#listContainer ul {
+  margin-top: 20px;
+  list-style: disc;
+  padding-left: 40px;
+}
+#imageContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#centeredImage {
+  display: block;
+  max-width: 100%;
+}
+.scroll-notifications {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-notification {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  animation: fadeOut 3s ease-in-out forwards;
+}
+
+/* Анимация исчезновения уведомления */
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+}
+
+/* Галерея с карточками */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Отступы между карточками */
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 элемента в строку */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Темный фон для текста */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-content h3, .card-content p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Эффект при наведении */
+.card:hover .card-content {
+  opacity: 1; /* Показываем текст */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Увеличение карточки */
+}
+
+
+:root {
+  --card-bg: rgba(255, 255, 255, 0.15);
+  --card-blur: 10px;
+  --card-radius: 15px;
+  --gradient-color: rgb(255, 123, 0);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.glass-card {
+  position: relative;
+  padding: 20px;
+  width: 250px;
+  height: 120px;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(var(--card-blur));
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.glass-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.glass-card p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.glass-card::before,
+.glass-card::after {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background: linear-gradient(45deg, transparent, var(--gradient-color), transparent);
+  top: -5%;
+  left: -5%;
+  z-index: -1;
+  border-radius: 20px;
+  transform-origin: center;
+  transition: transform 0.7s ease;
+}
+
+.glass-card::before {
+  animation: rotateGradient 10s infinite linear;
+}
+
+.glass-card:hover {
+  transform: scale(1.05);
+}
+
+.glass-card:hover::before {
+  transform: rotate(20deg) scale(1.1);
+}
+
+@keyframes rotateGradient {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .glass-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px); /* 2 карточки в строку */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 1 1 100%; /* 1 карточка в строку на маленьких экранах */
+  }
+}
+
+
+@media (max-width: 768px) {
+  main {
+    margin: 10px;
+    font-size:medium; /* Уменьшение шрифта для планшетов */
+    width: 90%;
+  }
+  .img-heroes
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .img-heroes
+{
+  border: 4px groove pink;
+  
+}
+.gallery {
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки для планшетов и телефонов */
+}
+}
+
+
+/* Стили для контейнера с большой картинкой */
+.image-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.large-image-container {
+  position: relative;
+}
+
+.large-image {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.large-image:hover {
+  transform: scale(1.05);
+}
+
+/* Текст и кнопка при наведении */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.overlay-text p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-link:hover {
+  background-color: #e64a19;
+}
+
+/* Показ текста при наведении */
+.large-image-container:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Миниатюра */
+.galler {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnail img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px

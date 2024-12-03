@@ -1,0 +1,170 @@
+/* Переменные цвета */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.2);
+    --border-color: rgba(255, 255, 255, 0.3);
+    --hover-glow: rgba(255, 255, 255, 0.6);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --input-bg: rgba(255, 255, 255, 0.5);
+}
+
+/* Стиль glassmorphism для формы */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.registration-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.registration-form input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.registration-form input:focus {
+    outline: none;
+    transform: scale(1.05);
+}
+
+.submit-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff4e50, #f9d423);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
+    background: var(--hover-glow);
+}
+
+/* Плавное появление формы */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Новый стиль header */
+.registration-header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+/* Круглая кнопка возврата */
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+}
+
+.back-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Эффекты при наведении */
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 480px) {
+    .back-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-button img {
+        width: 16px;
+        height: 16px;
+    }
+}
+/* Ссылка для переключения между регистрацией и входом */
+.form-footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-footer .switch-link {
+    color: #f9d423;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form-footer .switch-link:hover {
+    color: #ff4e50;
+}
+.captcha-container {
+    margin-top: 20px;
+    text-align: left;
+    text-decoration: ;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="login-header">
+        <a href="main.html" class="back-button" title="На главную">
+            <img src="./img/back-arrow.png" alt="Назад">
+        </a>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Вход</h2>
+            <!-- Обычная форма для входа -->
+            <form class="login-form" id="userLoginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="submit-btn">Войти</button>
+            </form>
+
+            <!-- Кнопка для Админа -->
+            <button type="button" class="admin-btn" onclick="handleLogin()">Вход для Админа</button>
+
+            <p class="form-footer">
+                Нет аккаунта? <a href="register.html" class="switch-link">Зарегистрироваться</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
