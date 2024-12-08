@@ -115,45 +115,7 @@ main
 .video-container:hover::before {
   opacity: 1;
 }
-.list-creator {
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
 
-.list-creator button {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.list-creator button:hover {
-  background-color: #0056b3;
-}
-
-#listContainer ul {
-  margin-top: 20px;
-  list-style: disc;
-  padding-left: 40px;
-}
-#imageContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#centeredImage {
-  display: block;
-  max-width: 100%;
-}
 .scroll-notifications {
   position: fixed;
   top: 20px;
