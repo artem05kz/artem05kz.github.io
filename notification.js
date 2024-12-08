@@ -74,7 +74,7 @@ function addNewNotification() {
 }
 
 // Запуск цикла добавления уведомлений
-setInterval(addNewNotification, 3000);
+// setInterval(addNewNotification, 3000);
 
 // Декоратор для остановки счетчика уведомлений
 notificationIcon.addEventListener('click', function () {
