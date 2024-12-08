@@ -46,6 +46,30 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+function createList() {
+    // Получаем контейнер для списка
+    const listContainer = document.getElementById('listContainer');
+    listContainer.innerHTML = ''; // Очищаем содержимое, если список уже был создан
+
+    // Создаем элемент <ul>
+    const listElement = document.createElement('ul');
+    listContainer.appendChild(listElement);
+
+    let userInput;
+
+    // Запрашиваем у пользователя содержимое пункта
+    do {
+        userInput = prompt('Введите элемент списка (или оставьте пустым, чтобы завершить):');
+        if (userInput && userInput.trim()) {
+            // Создаем элемент <li>
+            const listItem = document.createElement('li');
+            // Устанавливаем текстовое содержимое, чтобы избежать выполнения HTML
+            listItem.textContent = userInput.trim();
+            // Добавляем элемент <li> в <ul>
+            listElement.appendChild(listItem);
+        }
+    } while (userInput && userInput.trim());
+}
 
 // Связываем функцию с кнопкой
 const createListButton = document.getElementById('createListButton');
