@@ -45,7 +45,7 @@ notificationDropdown.addEventListener('click', (e) => {
 
 // Вызываем функцию для добавления кнопок после загрузки страницы
 addCloseButtons();
-
+updateUnreadCount(); // Обновляем счетчик
 // Функция для обновления количества непрочитанных уведомлений
 function updateUnreadCount() {
     const unreadItems = document.querySelectorAll('.notification-dropdown li.unread');
