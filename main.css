@@ -298,6 +298,9 @@ main
   .gallery-item {
     flex: 1 1 100%; /* 1 карточка в строку на маленьких экранах */
   }
+  .large-image {
+    margin-left: 20px;
+  }
 }
 
 
