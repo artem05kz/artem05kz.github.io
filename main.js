@@ -1,23 +1,3 @@
-const imageContainer = document.getElementById('imageContainer');
-const image = document.getElementById('centeredImage');
-const clickCoordinates = document.getElementById('clickCoordinates');
-
-// Центрирование изображения
-function centerImage() {
-    const containerRect = imageContainer.getBoundingClientRect();
-    imageContainer.style.left = `${(window.innerWidth - containerRect.width) / 2}px`;
-    imageContainer.style.top = `${(window.innerHeight - containerRect.height) / 2}px`;
-}
-
-window.addEventListener('resize', centerImage);
-centerImage(); // Выполняем при загрузке
-
-// Координаты клика
-document.addEventListener('click', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    clickCoordinates.textContent = `Координаты: X=${x}, Y=${y}`;
-});
 // Список заголовков для отслеживания
 const sections = [
     { id: 'Topic1', message: 'Раздел "Вступление"' },
