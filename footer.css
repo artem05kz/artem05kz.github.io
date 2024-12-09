@@ -154,4 +154,7 @@ button:hover {
       grid-template-columns: 1fr;
       text-align: center;
   }
+  .map iframe {
+    width: 75%;
+  }
 }
