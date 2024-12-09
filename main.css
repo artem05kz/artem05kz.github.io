@@ -307,6 +307,7 @@ main
 @media (max-width: 768px) {
   main {
     margin: 10px;
+    margin-left: 30px;
     font-size:medium; /* Уменьшение шрифта для планшетов */
     width: 90%;
   }
