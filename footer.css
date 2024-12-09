@@ -157,4 +157,7 @@ button:hover {
   .map iframe {
     width: 75%;
   }
+  .footer-bs {
+  width: 110%;
+    }
 }
