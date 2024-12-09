@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const menu = document.querySelector(".menu");
+
+    // Обработчик клика по бургеру
+    burgerMenu.addEventListener("click", () => {
+        burgerMenu.classList.toggle("active"); // Анимация иконки
+        menu.classList.toggle("active"); // Показ/скрытие меню
+    });
+
+    // Закрытие меню при клике на ссылку
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            burgerMenu.classList.remove("active");
+            menu.classList.remove("active");
+        });
+    });
+});
 // Список заголовков для отслеживания
 const sections = [
     { id: 'Topic1', message: 'Раздел "Вступление"' },
