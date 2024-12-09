@@ -309,7 +309,7 @@ main
     margin: 10px;
     margin-left: 30px;
     font-size:medium; /* Уменьшение шрифта для планшетов */
-    width: 90%;
+    width: 100%;
   }
   .img-heroes
   {
