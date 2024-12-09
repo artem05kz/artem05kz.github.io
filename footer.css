@@ -153,11 +153,9 @@ button:hover {
   .footer-bs {
       grid-template-columns: 1fr;
       text-align: center;
+      width: 110%;
   }
   .map iframe {
     width: 75%;
   }
-  .footer-bs {
-  width: 110%;
-    }
 }
