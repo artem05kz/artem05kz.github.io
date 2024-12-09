@@ -5,10 +5,10 @@ header {
   align-items: center; 
   margin: 0px; 
   width: 100%; 
-  padding: 0px; 
+  padding: 20px; 
   font-family: "Roboto Slab", serif; 
   font-style: normal; 
-  position: sticky; 
+  position: sticky;
 }
 
 .logo { 
