@@ -51,7 +51,13 @@ main
   text-transform: uppercase;
 
 }
-
+.topic5 {
+  margin-bottom: 10px;
+}
+.topic5 p {
+  font-size: 1rem;
+  margin: 0%;
+}
 /* Контейнер для видео и подписи */
 .video-container {
   display: flex;
