@@ -78,6 +78,57 @@ h1 {
 #resultImage {
     width: 50%;
 }
+/* Скрываем стандартные радио-кнопки */
+input[type="radio"] {
+    display: none;
+}
+
+/* Стили для метки, чтобы она выглядела как кнопка */
+.custom-radio {
+    display: inline-block;
+    width: 200px; /* Фиксированная ширина */
+    height: 50px; /* Фиксированная высота */
+    line-height: 50px; /* Выравнивание текста по вертикали */
+    text-align: center;
+    background-color: #fae2ca; /* Основной цвет */
+    color: #333;
+    border: 2px solid #ccc; /* Граница */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Эффект перехода */
+}
+
+/* Эффект при наведении */
+.custom-radio:hover {
+    background-color: #f5c89c; /* Более яркий цвет */
+    border-color: #333; /* Акцент на границу */
+}
+
+/* Стили для активной (выбранной) кнопки */
+input[type="radio"]:checked + .custom-radio {
+    background-color: #4caf50; /* Зеленый цвет */
+    color: white;
+    border-color: #4caf50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Обеспечиваем одинаковый размер текста */
+.custom-radio {
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .custom-radio {
+        width: 100%; /* Радио-кнопки занимают всю ширину */
+        height: auto; /* Высота адаптируется под текст */
+        line-height: normal; /* Выравнивание текста по умолчанию */
+        padding: 10px 0; /* Добавляем отступы */
+    }
+}
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .question img {
