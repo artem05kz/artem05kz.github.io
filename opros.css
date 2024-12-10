@@ -78,6 +78,62 @@ h1 {
 #resultImage {
     width: 50%;
 }
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .custom-radio {
+        width: 100%; /* Радио-кнопки занимают всю ширину */
+        height: auto; /* Высота адаптируется под текст */
+        line-height: normal; /* Выравнивание текста по умолчанию */
+        padding: 10px 0; /* Добавляем отступы */
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .question img {
+        max-width: 80%; /* Сужение изображений для мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .question img {
+        max-width: 100%; /* Изображения занимают всю ширину на маленьких экранах */
+    }
+}
+/* Скрыть стандартное отображение радио-кнопки */
+input[type="radio"] {
+    display: none;
+}
+
+/* Контейнер для радио-кнопки */
+input[type="radio"] + label {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #f5c89c, #7c7165);
+    border: 2px solid #7c7165;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Эффект при наведении */
+input[type="radio"] + label:hover {
+    background: linear-gradient(135deg, #7c7165, #f5c89c);
+    transform: scale(1.05);
+}
+
+/* Активное состояние при выборе */
+input[type="radio"]:checked + label {
+    background: #7c7165;
+    color: #fff;
+    border-color: #f5c89c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 /* Скрываем стандартные радио-кнопки */
 input[type="radio"] {
     display: none;
@@ -122,22 +178,9 @@ input[type="radio"]:checked + .custom-radio {
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .custom-radio {
-        width: 100%; /* Радио-кнопки занимают всю ширину */
+        width: 80%; /* Радио-кнопки занимают всю ширину */
         height: auto; /* Высота адаптируется под текст */
         line-height: normal; /* Выравнивание текста по умолчанию */
         padding: 10px 0; /* Добавляем отступы */
-    }
-}
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .question img {
-        max-width: 80%; /* Сужение изображений для мобильных */
-    }
-}
-
-@media (max-width: 480px) {
-    .question img {
-        max-width: 100%; /* Изображения занимают всю ширину на маленьких экранах */
     }
 }
