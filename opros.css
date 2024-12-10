@@ -52,18 +52,43 @@ h1 {
 .submitQuiz {
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 200px; /* Фиксированная ширина */
+    height: 50px; /* Фиксированная высота */
+    text-align: center;
+    font-size: 20px;
     font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    background-color: #fae2ca; /* Основной цвет */
+    color: #333;
+    border: 2px solid #333; /* Граница */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Эффект перехода */
 }
 
-.submitQuiz button:hover {
-    background-color: #45a049;
+/* Эффект при наведении */
+.submitQuiz:hover {
+    background-color: #f5c89c; /* Более яркий цвет */
+    border-color: #333; /* Акцент на границу */
+    color: #333;
+}
+
+/* Активное состояние */
+.submitQuiz:active {
+    background-color: #4caf50; /* Зеленый цвет */
+    color: white;
+    border-color: #4caf50;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Тень при нажатии */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .submitQuiz {
+        width: 80%; /* Кнопка занимает всю ширину */
+        height: auto; /* Автоматическая высота */
+        line-height: normal; /* Сбрасываем line-height */
+        padding: 10px; /* Добавляем отступы */
+    }
 }
 
 .hidden {
