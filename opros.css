@@ -1,13 +1,17 @@
 @import url("footer.css");
 @import url("header.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
 body {
-    background: #fff0e1;
-    font-family: "Roboto Slab", serif;
-    margin: 0;
-    padding: 0;
+    background: #fff0e1;;
+    margin: 0px 0px 0px 0px;
+    overflow-x: hidden;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+  
 }
 main {
     margin: 0 15%;
