@@ -98,10 +98,10 @@ h1 {
 #quizResult {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: -20px;
 }
 #resultImage {
-    width: 50%;
+    width: 25%;
+    height: 25%;
 }
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
