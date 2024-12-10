@@ -17,6 +17,9 @@ main {
     margin: 0px 10px 0px 15%;
     width: 70%;
     font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: large;
 }
 
 h1 {
