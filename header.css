@@ -117,7 +117,7 @@ a:hover { color:rgba(255, 255, 255, 0.411); text-decoration:none; }
 /* Активное состояние меню */
 .menu.active {
   display: flex;
-  width: 30%;
+  width: 40%;
 }
 
 /* Показываем бургер-меню только на мобильных */
