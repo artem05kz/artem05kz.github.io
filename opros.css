@@ -1,10 +1,10 @@
-@import url("footer.css");
-@import url("header.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
-body {
+body
+  {
     background: #fff0e1;;
     margin: 0px 0px 0px 0px;
     overflow-x: hidden;
@@ -14,7 +14,9 @@ body {
   
 }
 main {
-    margin: 0 15%;
+    margin: 0px 10px 0px 15%;
+    width: 70%;
+    font-family: "Roboto Slab", serif;
 }
 
 h1 {
