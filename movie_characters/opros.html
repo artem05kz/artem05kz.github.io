@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос о Киногероях</title>
+    <link rel="shortcut icon" href="./img/icon.png"/>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="opros.css">
+    <link rel="stylesheet" href="footer.css">
+    <script defer src="opros.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="./img/icon.png" width="60" height="60px" />
+            </a>
+        </div>
+        <button class="burger-menu" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="login.html" class="login-link">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="quiz">
+            <h1>Тест: Как хорошо вы знаете киногероев?</h1>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. Кто изображен на картинке?</p>
+                    <img src="./img/vaider.jpg" alt="Вопрос 1" class="quiz-image">
+                    <input type="radio" name="q1" value="correct" id="q1a1">
+                    <label for="q1a1" class="custom-radio">Дарт Вейдер</label><br>
+                    <input type="radio" name="q1" value="incorrect" id="q1a2">
+                    <label for="q1a2" class="custom-radio">Гэндальф</label><br>
+                    <input type="radio" name="q1" value="incorrect" id="q1a3">
+                    <label for="q1a3" class="custom-radio">Йода</label><br>
+                </div>
+                <div class="question">
+                    <p>2. Кто самый популярный герой 2008 года?</p>
+                    <input type="radio" name="q2" value="correct" id="q2a1">
+                    <label for="q2a1" class="custom-radio">Железный человек</label><br>
+                    <input type="radio" name="q2" value="incorrect" id="q2a2">
+                    <label for="q2a2" class="custom-radio">Халк</label><br>
+                    <input type="radio" name="q2" value="incorrect" id="q2a3">
+                    <label for="q2a3" class="custom-radio">Капитан Америка</label><br>
+                </div>
+                <div class="question">
+                    <p>3. Кто сыграл роль Джокера в фильме "Темный рыцарь" (2008)?</p>
+                    <input type="radio" name="q3" value="incorrect" id="q3a1">
+                    <label for="q3a1" class="custom-radio">Джаред Лето</label><br>
+                    <input type="radio" name="q3" value="incorrect" id="q3a2">
+                    <label for="q3a2" class="custom-radio">Хоакин Феникс</label><br>
+                    <input type="radio" name="q3" value="correct" id="q3a3">
+                    <label for="q3a3" class="custom-radio">Хит Леджер</label><br>
+                </div>
+                <div class="question">
+                    <p>4. Какой герой является капитаном "Черной жемчужины"?</p>
+                    <img src="./img/blackship.jpg" alt="Вопрос 1" class="quiz-image">
+                    <input type="radio" name="q4" value="incorrect" id="q4a1">
+                    <label for="q4a1" class="custom-radio">Гектор Барбосса</label><br>
+                    <input type="radio" name="q4" value="correct" id="q4a2">
+                    <label for="q4a2" class="custom-radio">Джек Воробей</label><br>
+                    <input type="radio" name="q4" value="incorrect" id="q4a3">
+                    <label for="q4a3" class="custom-radio">Уилл Тернер</label><br>
+                </div>
+                <div class="question">
+                    <p>5. Какая планета является домом Люка Скайуокера?</p>
+                    <input type="radio" name="q5" value="incorrect" id="q5a1">
+                    <label for="q5a1" class="custom-radio">Набу</label><br>
+                    <input type="radio" name="q5" value="correct" id="q5a2">
+                    <label for="q5a2" class="custom-radio">Татуин</label><br>
+                    <input type="radio" name="q5" value="incorrect" id="q5a3">
+                    <label for="q5a3" class="custom-radio">Кашиик</label><br>
+                </div>
+                <div class="question">
+                    <p>6. Как зовут лучшего друга Марти МакФлая из фильма "Назад в будущее"?</p>
+                    <input type="radio" name="q6" value="correct" id="q6a1">
+                    <label for="q6a1" class="custom-radio">Док Эмметт Браун</label><br>
+                    <input type="radio" name="q6" value="incorrect" id="q6a2">
+                    <label for="q6a2" class="custom-radio">Джордж МакФлай</label><br>
+                    <input type="radio" name="q6" value="incorrect" id="q6a3">
+                    <label for="q6a3" class="custom-radio">Бифф Таннен</label><br>
+                </div>
+                <div class="question">
+                    <p>7. Какой герой был первым учеником Оби-Вана Кеноби?</p>
+                    <input type="radio" name="q7" value="incorrect" id="q7a1">
+                    <label for="q7a1" class="custom-radio">Мейс Винду</label><br>
+                    <input type="radio" name="q7" value="incorrect" id="q7a2">
+                    <label for="q7a2" class="custom-radio">Люк Скайуокер</label><br>
+                    <input type="radio" name="q7" value="correct" id="q7a3">
+                    <label for="q7a3" class="custom-radio">Анакин Скайуокер</label><br>
+                </div>
+                <div class="question">
+                    <p>8. Какой антагонист изображен на картинке? </p>
+                    <img src="./img/dave.jpg" alt="Вопрос 1" class="quiz-image">
+                    <input type="radio" name="q8" value="incorrect" id="q8a1">
+                    <label for="q8a1" class="custom-radio">Армандо Салазар</label><br>
+                    <input type="radio" name="q8" value="correct" id="q8a2">
+                    <label for="q8a2" class="custom-radio">Дейви Джонс</label><br>
+                    <input type="radio" name="q8" value="incorrect" id="q8a3">
+                    <label for="q8a3" class="custom-radio">Гектор Барбосса</label><br>
+                </div>
+                <div class="question">
+                    <p>9. В каком фильме главный герой изобрел машину времени из автомобиля?</p>
+                    <input type="radio" name="q9" value="incorrect" id="q9a1">
+                    <label for="q9a1" class="custom-radio">Война будущего</label><br>
+                    <input type="radio" name="q9" value="incorrect" id="q9a2">
+                    <label for="q9a2" class="custom-radio">Патруль времени</label><br>
+                    <input type="radio" name="q9" value="correct" id="q9a3">
+                    <label for="q9a3" class="custom-radio">Назад в будущее</label><br>
+                </div>
+                <div class="question">
+                    <p>10. В каком году Марти МакФлай отправляется в прошлое в первой части "Назад в будущее"?</p>
+                    <input type="radio" name="q10" value="correct" id="q10a1">
+                    <label for="q10a1" class="custom-radio">1955</label><br>
+                    <input type="radio" name="q10" value="incorrect" id="q10a2">
+                    <label for="q10a2" class="custom-radio">1935</label><br>
+                    <input type="radio" name="q10" value="incorrect" id="q10a3">
+                    <label for="q10a3" class="custom-radio">1949</label><br>
+                </div>
+                <button type="button" class="submitQuiz" id="submitQuiz">Отправить</button>
+            </form>
+            <div id="quizResult" class="hidden">
+                <h2 id="resultText"></h2>
+                <img id="resultImage" alt="Ваш результат">
+            </div>
+        </section>
+    </main>
+    <footer id="contacts" class="footer-bs">
+        <div class="footer-social">
+            <h4>Социальные сети</h4>
+            <div class="social-buttons">
+                <a href="https://vk.com/artem05kz" class="social-button"><img src="./img/vk.png" alt="VK"></a>
+                <a href="https://github.com/artem05kz" class="social-button"><img src="./img/github.png" alt="GitHub"></a>
+                <a href="https://t.me/artemWOOF" class="social-button"><img src="./img/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+    
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.121795601315!2d37.47834302705853!3d55.66948217305346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1728560311203!5m2!1sru!2sru"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Адрес</p>
+        </div>          
+
+        <div class="footer-form">
+            <h4>Обратная связь</h4>
+            <form method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})"
+                       placeholder="+7(___)___-__-__">
+                       
+                <div class="form-buttons">
+                    <button class="button-submit" type="submit">Отправить</button>
+                    <button class="button-reset" type="reset">Очистить</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>

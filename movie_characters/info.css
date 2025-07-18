@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Общие стили */
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff0e1;
+  font-size: large;
+}
+
+.parallax-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s ease-out; /* Плавное перемещение */
+  will-change: transform; /* Подсказка браузеру для оптимизации */
+}
+
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 50vh;
+}
+
+.content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.content p {
+  font-size: 1.5rem;
+}
+
+
+
+.hero-content {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f5e5d4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  margin-bottom: 15px;
+}
+
+.hero-content .quote {
+  display: block;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.image-text {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.img-left {
+  width: 40%;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-right {
+  width: 100%;
+  margin-left: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Кнопка возврата */
+.header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+}
+
+.back-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+/* Медиазапрос для экранов шириной менее 768px */
+@media (max-width: 768px) {
+  .image-text {
+    display: flex;
+    flex-direction: column; /* Расположить элементы в столбик */
+    align-items: center; /* Центрируем содержимое */
+    text-align: justify; /* Для удобства чтения */
+    gap: 10px; /* Отступ между элементами */
+  }
+
+  .img-left, .img-right {
+    width: 80%; /* Сокращаем ширину картинки для мобильных */
+    margin: 0 auto; /* Центрируем картинку */
+  }
+
+  .hero-content section {
+    margin: 20px 10px; /* Сужаем отступы для экономии места */
+  }
+
+  .content h1 {
+    font-size: 2rem; /* Уменьшаем размер заголовка */
+  }
+
+  .content p {
+    font-size: 1rem; /* Уменьшаем размер текста */
+  }
+}
+
+/* Медиазапрос для совсем маленьких экранов (менее 480px) */
+@media (max-width: 480px) {
+  .img-left, .img-right {
+    width: 100%; /* Картинки занимают всю ширину */
+  }
+
+  .hero-content section {
+    margin: 10px 5px; /* Сужаем отступы ещё сильнее */
+  }
+
+  .content h1 {
+    font-size: 1.5rem; /* Ещё меньше заголовки */
+  }
+
+  .content p {
+    font-size: 0.9rem; /* Ещё меньше текст */
+  }
+}

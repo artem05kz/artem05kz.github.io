@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>Киногерои</title>
+        <link rel="shortcut icon" href="./img/icon.png"/>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/icon.png" width="60" height="60px" />
+                </a>
+            </div>
+            <button class="burger-menu" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="menu">
+                <ul>
+                    <li><a href="opros.html">Викторина</a></li>
+                    <li><a href="#Topic5">Галерея киногероев</a></li>
+                    <li><a href="#Contacts">Контакты</a></li>
+                    <li><a href="login.html" class="login-link">Вход</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script defer src="notification.js"></script>
+        <main>
+            <div class="notification-container">
+                <div class="notification-icon" id="notificationIcon">
+                    <img src="./img/notification.png" alt="icon" class="notification-image"> 
+                    <span id="unreadCount" class="notification-count">3</span> 
+                </div>
+                <div class="notification-dropdown" id="notificationDropdown">
+                    <ul>
+                        <li class="unread" data-id="1">Новое уведомление 1</li>
+                        <li class="unread" data-id="2">Новое уведомление 2</li>
+                        <li class="unread" data-id="3">Новое уведомление 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="notificationDetail" class="notification-detail">
+                <p id="notificationText"></p>
+            </div>    
+            <div id="scrollNotifications" class="scroll-notifications"></div> 
+            <h2 id="Topic1" class="topic1"><b>Вступление</b></h2>
+                <div>
+                    <p class="text-justify">
+                        Киногерои — это персонажи, которые играют ключевую роль в развитии сюжетов фильмов и киновселенных. 
+                        Они воплощают в себе различные качества, ценности и идеалы, которые делают их важными для зрителей. 
+                        Каждый киногерой помогает зрителям переживать эмоции, бороться с внутренними и внешними конфликтами и, конечно, 
+                        позволяет почувствовать себя частью захватывающего мира.
+                    </p>
+                    <p>
+                        Киногерои могут быть разными: от обычных людей, которые преодолевают сложные обстоятельства, до супергероев с потрясающими способностями, 
+                        способных спасать мир. Суть киногероев заключается в том, что они помогают раскрывать важные темы, такие как борьба добра со злом, 
+                        личностный рост и самопожертвование, а также они могут служить примером для подражания.
+                    </p>                                   
+                </div>
+
+            <h2 id="Topic2" class="topic2"><b>Видео</b></h2>
+            <div class="video-container">
+                <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/watch?v=_3bQe7591eU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p>Это видео о самых интересных персонажей в кино!</p>
+            </div>
+            <h2 id = "Topic3">  Происхождение и эволюция киногероев </h2>
+                <div class="topic3 text-justify">
+                
+
+                    Киногерои существуют почти столько же, сколько и само кино. Первые герои появились в немых фильмах начала 20 века, воплощая в себе простые архетипы добра и зла.
+                    <p>Немое кино (1895-1927)</p>
+                    Герои: Храбрые ковбои, благородные рыцари, невинные девы в беде <br>
+                    Злодеи: Бесчестные преступники, коварные женщины-вамп, жестокие злодеи
+                    <p>Классический кинематограф (1927-1960)</p>
+                    Герои: Сильные и мужественные мужчины (например, Хамфри Богарт, Кэри Грант), гламурные и элегантные женщины (например, Марлен Дитрих, Грейс Келли) <br>
+                    Злодеи: Опасные гангстеры, загадочные убийцы, манипулятивные роковые женщины
+                    <p>Новое Голливудское кино (1960-1980)</p>
+                    Герои: Антигерои с моральной неоднозначностью (например, Роберт Де Ниро, Аль Пачино), сильные и независимые женщины (например, Джейн Фонда, Барбара Стрейзанд) <br>
+                    Злодеи: Сложные и мотивированные антагонисты, часто с трагическими предысториями
+                    <p>Эра блокбастеров (1980-настоящее время)</p>
+                    Герои: Супергерои и другие обладатели сверхспособностей (например, Супермен, Бэтмен, Чудо-женщина), экшен-герои с непобедимой физической силой (например, Арнольд Шварценеггер, 
+                    Сильвестр Сталлоне) <br>
+                    Злодеи: Зловещие пришельцы, могущественные колдуны, коварные террористы
+                    <p>Современное кино</p>
+                    В последние годы наблюдается тенденция к большей разнообразию и сложности в изображении киногероев. Герои теперь представляют более широкий спектр культур и личностей. 
+                    Также растет популярность антигероев и героев с недостатками.
+                    Эволюция киногероев отражает меняющиеся социальные ценности и культурные нормы. Они служат зеркалом нашего общества, отражая наши надежды, страхи и стремления.
+                </div>
+            
+            <section class="gallery">
+                <div class="gallery-item">
+                    <div class="card">
+                    <img src="./img/charlie.jpg" alt="Немое кино">
+                    <div class="card-content">
+                        <h3>Немое кино</h3>
+                        <p>Эпоха немого кино, которая длилась с 1895 по 1927 годы.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="card">
+                    <img src="./img/noword.jpg" alt="Классическое кино">
+                    <div class="card-content">
+                        <h3>Классическое кино</h3>
+                        <p>Эпоха с 1927 по 1960 годы, когда были созданы культовые фильмы.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="card">
+                    <img src="./img/dino.jpg" alt="Современное кино">
+                    <div class="card-content">
+                        <h3>Современное кино</h3>
+                        <p>Фильмы 21 века, представленные различными жанрами и стилями.</p>
+                    </div>
+                    </div>
+                </div>
+                </section>
+                <section class="gallery">
+                <div class="gallery-item">
+                    <div class="card">
+                    <img src="./img/terminator.jpeg" alt="Блокбастеры">
+                    <div class="card-content">
+                        <h3>Блокбастеры</h3>
+                        <p>Фильмы с огромным бюджетом и массовым успехом, начиная с 1980-х годов.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="card">
+                    <img src="./img/father.jpg" alt="Новое кино">
+                    <div class="card-content">
+                        <h3>Новое кино</h3>
+                        <p>Современные фильмы, которые привносят новые технологии и истории.</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="card">
+                    <img src="./img/avengers.jpeg" alt="Современное">
+                    <div class="card-content">
+                        <h3>Современные блокбастеры</h3>
+                        <p>Новые блокбастеры, демонстрирующие технику и спецэффекты 21 века.</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <h2 id = "Topic4" class="topic4">  Типы киногероев </h2>
+                <div class="topic4 text-justify">
+                    <p>Супергерои</p>
+                        Супергерои — это персонажи, обладающие сверхчеловеческими способностями, которые позволяют им совершать героические поступки, спасать мир или бороться с величайшими угрозами 
+                        человечеству. Они обычно отличаются идеализированными моральными качествами: честностью, смелостью и желанием защищать слабых.<br>
+                        
+                        Пример: В киновселенной Marvel Человек-Паук, Железный Человек, Капитан Америка и другие персонажи обладают уникальными силами или технологиями, которые дают им преимущество в 
+                        борьбе с врагами.Каждый из этих героев имеет свою историю и ценности, но все они борются за мир и справедливость.  <br>
+
+                    <p>Антигерои</p>
+                        Антигерои — это персонажи, чьи действия или моральные устои часто расходятся с традиционными героическими стандартами. 
+                        Они могут проявлять насилие, жестокость или эгоизм, но в то же время они действуют с благими намерениями или ради личных целей. 
+                        Эти персонажи часто сталкиваются с внутренними противоречиями и моральными дилеммами.<br>
+                        
+                        Пример: Джокер из DC Comics — один из самых известных антигероев, противостоящих Бэтмену. Он полон хаоса и разрушения, но в своей природе скрыта своя логика и даже философия.<br>
+
+                    <p>Эпические герои</p>
+                        Эпические герои — это персонажи, которые совершают подвиги в огромном масштабе, часто сражаясь с могущественными врагами, 
+                        чьи действия влияют на судьбу целых народов или даже вселенных. Эти герои часто представляют собой символы наций или культур, борясь за высокие идеалы.<br>
+                        
+                        Пример: В «Звездных войнах» Люк Скайуокер является классическим эпическим героем, чьи действия влияют на судьбу целой галактики. Он борется с Империей и, 
+                        в конечном итоге, становится символом сопротивления и победы света. <br>
+
+                    <p>Герои-детективы</p>
+                        Герои-детективы — это персонажи, которые расследуют преступления, раскрывают тайны и разгадывают сложные загадки. Несмотря на то, что у них часто нет сверхспособностей, 
+                        они могут обладать исключительным интеллектом, вниманием к деталям и решимостью в поисках правды.<br>
+                        
+                        Пример:  Шерлок Холмс — классический детектив, чьи невероятные аналитические способности позволяют ему раскрывать самые сложные преступления. 
+                        Его логика и внимание к мелочам делают его одним из самых известных и успешных героев. <br>
+
+                    <p>Комедийные герои</p>
+                        Комедийные герои — это персонажи, чьи действия часто наполнены юмором, легкостью и неожиданными поворотами. Они могут попасть в абсурдные или неловкие ситуации, 
+                        но их реакции и способности позволяют им выходить победителями, часто без применения насилия.<br>
+                        
+                        Пример:  Охотники за привидениями — группа героев, которые борются с паранормальными явлениями, но делают это с юмором и ироничными моментами. 
+                        Их храбрость в сочетании с комическими ситуациями делает их персонажами, с которыми зрители легко себя ассоциируют. <br>
+                </div>
+                <div class="cards-container">
+                    <div class="glass-card">
+                        <h3>Супергерои</h3>
+                        <p>Персонажи с уникальными способностями, которые спасают мир.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Антигерои</h3>
+                        <p>Персонажи с моральной неоднозначностью, действующие ради собственных целей.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Эпические герои</h3>
+                        <p>Герои, чьи действия влияют на судьбу целых народов и вселенных.</p>
+                    </div>
+                </div>
+            <script defer  src="cart.js"></script>
+            <section id = "Top-movies" class="top-movies">
+                <h2>Топ фильмов</h2>
+                <div class="movie-list">
+                    <div class="movie-card" draggable="true" data-title="Интерстеллар" data-duration="169" data-rating="8.6">
+                        <img src="./img/inter.png" alt="Интерстеллар">
+                        <div class="rating-stars"></div>
+                        <div class="movie-info">
+                            <h3>Интерстеллар</h3>
+                            <p>Продолжительность: 169 мин.</p>
+                            <button class="add-to-cart">Добавить к просмотру</button>
+                        </div>
+                    </div>
+                    <div class="movie-card" draggable="true" data-title="Начало" data-duration="148" data-rating="8.7">
+                        <img src="./img/incep.jpg" alt="Начало">
+                        <div class="rating-stars"></div>
+                        <div class="movie-info">
+                            <h3>Начало</h3>
+                            <p>Продолжительность: 148 мин.</p>
+                            <button class="add-to-cart">Добавить к просмотру</button>
+                        </div>
+                    </div>
+                    <div class="movie-card" draggable="true" data-title="Темный рыцарь" data-duration="152" data-rating="8.5">
+                        <img src="./img/batman.png" alt="Темный рыцарь">
+                        <div class="rating-stars"></div>
+                        <div class="movie-info">
+                            <h3>Темный рыцарь</h3>
+                            <p>Продолжительность: 152 мин.</p>
+                            <button class="add-to-cart">Добавить к просмотру</button>
+                        </div>
+                    </div>
+                    <div class="movie-card" draggable="true" data-title="Звёздные войны. Эпизод 3: Месть ситхов" data-duration="140" data-rating="8.1">
+                        <img src="./img/swE3.png" alt="Звёздные войны. Эпизод 3: Месть ситхов">
+                        <div class="rating-stars"></div>
+                        <div class="movie-info">
+                            <h3>Звёздные войны. Эпизод 3: Месть ситхов</h3>
+                            <p>Продолжительность: 140 мин.</p>
+                            <button class="add-to-cart">Добавить к просмотру</button>
+                        </div>
+                    </div>
+                    <div class="movie-card" draggable="true" data-title="1+1" data-duration="112" data-rating="8.8">
+                        <img src="./img/1+1.png" alt="1+1">
+                        <div class="rating-stars"></div>
+                        <div class="movie-info">
+                            <h3>1+1</h3>
+                            <p>Продолжительность: 112 мин.</p>
+                            <button class="add-to-cart">Добавить к просмотру</button>
+                        </div>
+                    </div>
+                    <div class="movie-card"  data-title="Властелин колец: Братство кольца" data-duration="178" data-rating="8.6">
+                        <img src="./img/lordring.png" alt="Властелин колец: Братство кольца">
+                        <div class="rating-stars"></div>
+                        <div class="movie-info">
+                            <h3>Властелин колец: Братство кольца</h3>
+                            <p>Продолжительность: 178 мин.</p>
+                            <button class="add-to-cart">Добавить к просмотру</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+            <section class="cart">
+                <h2>Корзина</h2>
+                <div class="cart-list"></div>
+                <div class="cart-summary">
+                    <p>Общая продолжительность: <span id="total-duration">0</span> мин.</p>
+                </div>
+                <div class="filters">
+                    <h3>Фильтры</h3>
+                    <label for="min-duration">Мин. продолжительность:</label>
+                    <input type="number" id="min-duration" placeholder="Напр. 100">
+                    <label for="max-duration">Макс. продолжительность:</label>
+                    <input type="number" id="max-duration" placeholder="Напр. 200">
+                    <div class="filter-buttons">
+                        <button class="apply-filter">Применить фильтр</button>
+                        <button class="sort-asc">Сортировать по возрастанию</button>
+                        <button class="sort-desc">Сортировать по убыванию</button>
+                        <button class="clear-filters">Сбросить фильтры</button>
+                    </div>
+                    <div class="rating-slider">
+                        <h3>Фильтр по оценке</h3>
+                        <label for="rating-range">Мин. Рейтинг:</label>
+                        <input type="range" id="rating-range" min="0" max="10" step="0.1" value="5">
+                        <span id="rating-value">5</span>
+                    </div>                    
+                </div>
+            </section>
+        
+            <h2 id="Topic5" class="topic5">Галерея киногероев
+            <p>(Кликните на картинку чтобы узнать о герое больше)</p></h2>
+            <div class="image-display">
+                <div class="large-image-container">
+                  <img class="large-image" src="./img/vaider.jpg" alt="Hero 2" />
+                  <div class="overlay-text hidden">
+                    <p>Узнайте больше о герое!</p>
+                    <a href="vaider.html" class="hero-link" target="_blank">Перейти на сайт</a>
+                  </div>
+                </div>
+            </div>
+              
+            <div class="galler">
+                <div class="thumbnail">
+                  <img src="./img/vaider.jpg" alt="Hero 2" data-url="vaider.html" />
+                </div>
+                <div class="thumbnail">
+                  <img src="./img/dokfuture.jpg" alt="Hero 3" data-url="dokfuture.html" />
+                </div>
+                <div class="thumbnail">
+                  <img src="./img/pirate.jpg" alt="Hero 4" data-url="pirate.html" />
+                </div>  
+            </div>
+              
+            <h3 id = "Term" class="term"><b>Термины</b></h3>
+            <article>         
+                <dl>
+                    <dt>Киногерой</dt>
+                    <dd>Актёр, исполняющий главную роль в кинофильме; главное действующее лицо кинофильма</dd>
+                    <dt>Действующие лица</dt>
+                    <dd>Протагонист, центральное действующее лицо, актёр, играющий главную роль в произведении и т. д. Противопоставляется антагонисту. </dd>
+                    <dd>Антагонист, персонаж, противодействующий главному герою (протагонисту) на пути к достижению его целей</dd>
+                    <dt>Кинематограф</dt>
+                    <dd>Отрасль человеческой деятельности, заключающаяся в создании движущихся изображений.</dd>
+                    <dt>Киноиндустрия</dt>
+                    <dd>Отрасль экономики, производящая кинофильмы, спецэффекты для кинофильмов, мультипликацию, и демонстрирующая эти произведения для зрителей.</dd>
+                    <dt>Цифровое кино</dt>
+                    <dd>Современная технология кинематографа, основанная на использовании цифровых форм производства и распространения кинофильмов без использования киноплёнки.</dd>
+                    </dl>
+            </article>                
+        </main>
+
+
+        <footer id="Contacts" class="footer-bs">
+            <div class="footer-social">
+                <h4>Социальные сети</h4>
+                <div class="social-buttons">
+                    <a href="https://vk.com/artem05kz" class="social-button"><img src="./img/vk.png" alt="VK"></a>
+                    <a href="https://github.com/artem05kz" class="social-button"><img src="./img/github.png" alt="GitHub"></a>
+                    <a href="https://t.me/artemWOOF" class="social-button"><img src="./img/telegram.png" alt="Telegram"></a>
+                </div>
+            </div>
+        
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.121795601315!2d37.47834302705853!3d55.66948217305346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1728560311203!5m2!1sru!2sru"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Адрес</p>
+            </div>          
+
+            <div class="footer-form">
+                <h4>Обратная связь</h4>
+                <form method="post">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})"
+                           placeholder="+7(___)___-__-__">
+                           
+                    <div class="form-buttons">
+                        <button class="button-submit" type="submit">Отправить</button>
+                        <button class="button-reset" type="reset">Очистить</button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+
+    </body>
+</html>
